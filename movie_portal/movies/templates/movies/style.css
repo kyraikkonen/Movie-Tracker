@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Tracker</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'movies/style.css' %}">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: darkred; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; }
+        .watched { text-decoration: line-through; color: gray; }
+    </style>
+</head>
+<body>
+    <h1>Movie Tracker</h1>
+    <ul>
+        <li>
+            <input type="checkbox" onchange="toggleWatched(this)"> The Matrix (1999)
+        </li>
+        <li>
+            <input type="checkbox" onchange="toggleWatched(this)"> Inception (2010)
+        </li>
+        <li>
+            <input type="checkbox" onchange="toggleWatched(this)"> Interstellar (2014)
+        </li>
+    </ul>
+
+    <script>
+        function toggleWatched(checkbox) {
+            const li = checkbox.parentElement;
+            if (checkbox.checked) {
+                li.classList.add('watched'); // mark as watched
+            } else {
+                li.classList.remove('watched'); // mark as unwatched
+            }
+        }
+    </script>
+</body>
+</html>
