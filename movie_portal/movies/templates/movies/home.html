@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Tracker</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'movies/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Movie Tracker</h1>
+    </header>
+    <div class="container">
+        <div class="movie-card">
+            <div>
+                <input type="checkbox" onchange="toggleWatched(this)">
+                <span class="movie-title">The Matrix (1999)</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="movie-card">
+            <div>
+                <input type="checkbox" onchange="toggleWatched(this)">
+                <span class="movie-title">Inception (2010)</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="movie-card">
+            <div>
+                <input type="checkbox" onchange="toggleWatched(this)">
+                <span class="movie-title">Interstellar (2014)</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+
+        <div class="movie-card">
+            <div>
+                <input type="checkbox" onchange="toggleWatched(this)">
+                <span class="movie-title">Kingsman: The Secret Service (2014)</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="movie-card">
+            <div>
+                <input type="checkbox" onchange="toggleWatched(this)">
+                <span class="movie-title">The Addams Family (1991)</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="movie-card">
+            <div>
+                <input type="checkbox" onchange="toggleWatched(this)">
+                <span class="movie-title">The Wild Robot (2024)</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="movie-card">
+            <div>
+                <input type="checkbox" onchange="toggleWatched(this)">
+                <span class="movie-title">Fresh (2022)</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+    </div>
+
+    <script src="{% static 'movies/script.js' %}"></script>
+</body>
+</html>
